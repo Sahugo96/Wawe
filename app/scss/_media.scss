@@ -1,0 +1,309 @@
+@media (max-width: 1199px) {
+  .blog-slider__wrapper {
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+  
+  .service__list,
+  .team__items {
+    justify-content: space-around;
+    padding: 0 5px;
+  }
+
+  .service__item:not(:last-child),
+  .team__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    margin-bottom: 80px;
+    font-size: 40px;
+    padding-left: 25px;
+    
+    &::after {
+      bottom: -16px;
+      font-size: 60px;
+    }
+  }
+
+  .header__top {
+    max-width: 1800px;
+    width: 100%;
+    left: 0;
+    padding: 10px 5px;
+  }
+
+  .menu {
+      
+    &__btn {
+      display: block;
+    }
+      
+    &__list {
+      display: none;
+      height: 100vh;
+      position: absolute;
+      padding: 85px 15px 5px;
+      top: 0;
+      left: 0;
+      right: 0;
+      overflow: scroll;
+      background-color: $primary-color;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 3;
+    }
+      
+    &__item:not(:last-child) {
+      margin-right: 0;
+    }
+      
+    &__link {
+      padding: 15px;
+      display: block;
+    }
+  }
+  
+  .header__title {
+    padding-bottom: 80px;
+  }
+
+  .trainers {
+    
+    &__img {
+      display: none;
+    }
+    
+    &__box {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  .video,
+  .quote {
+    margin-bottom: 80px;
+  }
+
+  .section-padding {
+    padding: 80px 0;
+  }
+  
+  .team,
+  .request,
+  .request__inner {
+    padding-bottom: 70px;
+  }
+
+  .about__wrapper {
+    grid-gap: 30px 40px;
+  }
+
+  .benefit {
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    
+    &__item:not(:last-child),
+    &__items {
+      margin-bottom: 50px;
+    }
+    
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &__item {
+      max-width: 500px;
+    }
+  
+    &__content {
+      max-width: 500px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+
+  .title {
+    font-size: 36px;
+    
+    &::after {
+      bottom: -14px;
+      font-size: 54px;
+    }
+  }
+
+  .header {
+    
+    &__link {
+      bottom: 25px;
+      height: 50px;
+    }
+    
+    &__title {
+      font-size: 18px;
+      padding-bottom: 0;
+    }
+    
+    &__name {
+      font-size: 150px;
+    }
+  }
+
+  .about__wrapper {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .request {
+    
+    &__inner {
+      flex-direction: column;
+      padding-bottom: 50px;
+    }
+      
+    &__form {
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .title {
+    font-size: 28px;
+    
+    &::after {
+      bottom: -9px;
+      font-size: 34px;
+    }
+  }
+  
+  .btn {
+    min-width: 300px
+  }
+  
+  .section-padding {
+    padding: 55px 0;
+  }
+  
+  .team,
+  .request,
+  .request__inner {
+    padding-bottom: 55px;
+  }
+  
+  .header__name {
+    font-size: 80px;
+    line-height: 1;
+  }
+  
+  .about__wrapper {
+    display: block;
+    margin: 0 auto;
+    
+    p:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .gallery {
+    
+    &__list {
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+    
+    &__link {
+      font-size: 18px;
+    }
+    
+    &__block {
+      margin: 5px;
+    }
+  }
+
+  .quote__content {
+    font-size: 28px;
+  }
+  
+  .request__trainers {
+    padding: 49px 15px 71px;
+  }
+
+  .experience {
+    max-width: 320px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+    &__item {
+      margin-bottom: 15px;
+    }
+    
+    &__number {
+      font-size: 32px;
+    }
+  }
+
+  .blog-slider {
+    
+    &__title {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    
+    &__item {
+      height: 400px;
+    }
+  }
+
+  .team__img {
+    margin: 0 auto 25px;
+    max-width: 250px;
+    height: 300px;
+  }
+
+  .video::before {
+    width: 50px;
+    height: 50px;
+  }
+
+  .client-stat__svg {
+    
+    &--short{
+      width: 153px;
+    }
+  
+    &--middle{
+      width: 200px;
+    }
+  
+    &--long{
+      width: 247px;
+    }
+  }
+
+  .social__link {
+    font-size: 20px;
+  }
+}
